@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+
+    <!-- ✅ Tailwind CDN (for quick setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: Add animation if needed -->
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .fade-in {
+        animation: fadeIn 1s ease-out forwards;
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <!-- ✅ Optional: Static Floating Navbar OUTSIDE React -->
+
+    <!-- ✅ React App will mount here -->
+    <div id="root"></div>
+
+    <!-- React scripts will be injected here by Vite/Webpack -->
+  </body>
+</html>

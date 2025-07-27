@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(120deg,#043a10,#51022e);
+    color: white;
+}
+#nav {
+    background-color: #212121;
+    color: white;
+    position: fixed;
+    width: 100%;
+    /* height: 100px; */
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+.divText{
+    display: flex;
+}
+.text{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.text2{
+    padding-top: 30px;
+    font-size: 40px;
+}
+.name{
+    display: flex;
+}
+.text3{
+    font-size: 20px;
+    padding-right: 5px;
+}
+#items{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+#items a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+#items a:hover{
+    background-color: #cf9a36;
+    color: blue;
+}
+#name{
+    padding: 30px;
+    margin-left: 50px;
+}
+.head{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#greet{
+    font-size: 20px;
+    opacity: 0; /* Hidden initially */
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#para{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+
+#bbtn{
+    width: 200px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    border: 2px solid #206427;
+}
+div.social{
+    display: flex;
+    margin-top: 20px;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.social a:hover{
+    color: #404fef;
+    background-color: #bad62f;
+    border-radius: 50px;
+}
+img.img-fluid{
+    margin-top: -50px;
+    margin-left: 100px;
+    height: 500px;
+    width: 600px;
+}
+.head2{
+    width: 300px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    color: #ff8000;
+    border-bottom: 3px solid #af3b01fb;
+}
+.card-text2{
+    font-weight: bolder;
+}
+#about1{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-right: 5px solid #a2a1a1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+#greet-bottom{
+    /* width: 00px; */
+    font-size: 25px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 50px;
+}
+.photo2{
+    margin-top: -100px;
+    margin-left: -100px;
+}
+.educ{
+    border-bottom: 2px dotted #fff;
+    border-left: 10px none;
+}
+.head3{
+    width: 300px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    color: #ff8000;
+    border-bottom: 3px solid #ad3d05;
+    padding-bottom: 10px;
+}
+.head4{
+    color: #ff8000;
+    font-family: 'Times New Roman', Times, serif;
+}
+#skills{
+    margin-top: 100px;
+}
+#skills div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.head5{
+    width: 300px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    color: #ff8000;
+    border-bottom: 3px solid #ad3d05;
+    padding-bottom: 10px;
+}
+.head6{
+    color: #ff8000;
+    font-family: 'Times New Roman', Times, serif;
+}
+img.photo3{
+    margin-top: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
