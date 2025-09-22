@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from 'react-parallax-tilt';
 
 const Project = () => {
   const projectData = [
@@ -27,37 +28,45 @@ const Project = () => {
       id="projects"
       className="min-h-screen w-full bg-transparent text-white px-4 sm:px-8 md:px-16 lg:px-24 py-16"
     >
-      {/* Header */}
+      {/* No background blobs or overlays here, only tilt effect on cards */}
+
       <div className="text-center mb-12">
         <h2 className="text-4xl sm:text-5xl font-bold mb-3">Projects</h2>
         <h4 className="text-lg sm:text-xl text-gray-300">Some of my works</h4>
       </div>
 
-      {/* Project Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {projectData.map((project, index) => (
-          <div
+          <Tilt
             key={index}
-            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col hover:scale-105 transition-transform duration-300"
+            glareEnable={true}
+            glareMaxOpacity={0.3}
+            scale={1.05}
+            tiltMaxAngleX={15}
+            tiltMaxAngleY={15}
+            transitionSpeed={2000}
+            className="w-full"
           >
-            <img
-              src={project.img}
-              alt={project.title}
-              className="w-full h-60 object-cover transition-transform duration-300 hover:scale-110 rounded-t-lg"
-            />
-            <div className="p-5 text-center flex flex-col flex-grow">
-              <h5 className="text-xl font-semibold">{project.title}</h5>
-              <p className="text-gray-400 my-3">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition"
-              >
-                View Project
-              </a>
+            <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col hover:scale-105 transition-transform duration-300">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-60 object-cover transition-transform duration-300 hover:scale-110 rounded-t-lg"
+              />
+              <div className="p-5 text-center flex flex-col flex-grow">
+                <h5 className="text-xl font-semibold">{project.title}</h5>
+                <p className="text-gray-400 my-3">{project.description}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition"
+                >
+                  View Project
+                </a>
+              </div>
             </div>
-          </div>
+          </Tilt>
         ))}
       </div>
     </section>

@@ -3,7 +3,6 @@ import Home from "./Component/Home";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
 import React from "react";
-import Background from "./Component/BackGround";
 import ParallaxBlobs from "./Component/ParallaxBlobs"; 
 import Project from "./Component/Project"; 
 
@@ -11,7 +10,7 @@ function App() {
   return (
     // <div className="bg-gradient-to-r from-blue-950 via-purple-950 to-pink-950">
     <div className="relative">
-      <Background />
+      {/* <Background /> */}
       <ParallaxBlobs /> 
       <Navbar />
       <section id="home" className="min-h-screen scroll-mt-24 pt-24 text-white px-8 py-16 flex flex-col lg:flex-row items-center justify-between">

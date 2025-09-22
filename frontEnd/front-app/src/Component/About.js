@@ -6,6 +6,7 @@ import { FaHtml5, FaCss3, FaJs, FaJava, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub} from "react-icons/fa";
 import { useAnimation } from "framer-motion";
+import SkillGlobe from "./SkillGlobe";
 
 
 const About = () => {
@@ -129,126 +130,9 @@ const controls = useAnimation();
         >
           <h2 className="text-yellow-400 text-2xl md:text-3xl font-bold mb-4 mt-5 text-center leading-[2.2]">Skills</h2>
           <h4 className="text-gray-300 text-lg mb-8 text-center font-semibold">I enjoy working with this.</h4>
-        
+          <SkillGlobe />
           {/* Skills Grid - 3 per row, fully responsive */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
-            
-            {/* HTML5 */}
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              whileHover={{ scale: 1.1 }}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <motion.div 
-                className="text-8xl md:text-9xl mb-4"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
-                <FaHtml5 style={{ color: "#e34c26" }} />
-              </motion.div>
-              <h3 className="text-white text-xl font-semibold text-center">HTML5</h3>
-            </motion.div>
-
-            {/* CSS3 */}
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.1 }}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <motion.div 
-                className="text-8xl md:text-9xl mb-4"
-                whileHover={{ rotate: -360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
-                <FaCss3 style={{ color: "#264de4" }} />
-              </motion.div>
-              <h3 className="text-white text-xl font-semibold text-center">CSS3</h3>
-            </motion.div>
-
-            {/* JavaScript */}
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              whileHover={{ scale: 1.1 }}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <motion.div 
-                className="text-8xl md:text-9xl mb-4"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
-                <FaJs style={{ color: "#f7df1e" }} />
-              </motion.div>
-              <h3 className="text-white text-xl font-semibold text-center">JavaScript</h3>
-            </motion.div>
-
-            {/* Java */}
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              whileHover={{ scale: 1.1 }}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <motion.div 
-                className="text-8xl md:text-9xl mb-4"
-                whileHover={{ rotate: -360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
-                <FaJava style={{ color: "#cd570e" }} />
-              </motion.div>
-              <h3 className="text-white text-xl font-semibold text-center">Java</h3>
-            </motion.div>
-
-            {/* React */}
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              whileHover={{ scale: 1.1 }}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <motion.div 
-                className="text-8xl md:text-9xl mb-4"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
-                <FaReact style={{ color: "#61dafb" }} />
-              </motion.div>
-              <h3 className="text-white text-xl font-semibold text-center">React</h3>
-            </motion.div>
-
-            {/* Tailwind CSS */}
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              whileHover={{ scale: 1.1 }}
-              viewport={{ once: false, amount: 0.3 }}
-              className="flex flex-col items-center justify-center p-6 bg-gray-800/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <motion.div 
-                className="text-8xl md:text-9xl mb-4"
-                whileHover={{ rotate: -360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-              >
-                <SiTailwindcss style={{ color: "#06b6d4" }} />
-              </motion.div>
-              <h3 className="text-white text-xl font-semibold text-center">Tailwind CSS</h3>
-            </motion.div>
-
-          </div>
-        </motion.div>
+      </motion.div>
       </section>
     </div>
   );

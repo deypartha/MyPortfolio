@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function ParallaxBlobs() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {/* White Blob */}
       <motion.div
         className="absolute top-0 left-10 w-80 h-80 bg-white/10 rounded-full blur-3xl"

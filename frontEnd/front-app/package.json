@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.3.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -14,10 +16,14 @@
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
+    "react-parallax-tilt": "^1.7.308",
     "react-router-dom": "^7.7.0",
     "react-scripts": "5.0.1",
+    "react-tagcloud": "^2.3.3",
     "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.8.1",
+    "tagcloud": "^1.1.0-1",
+    "three": "^0.180.0",
+    "tsparticles": "^3.9.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
